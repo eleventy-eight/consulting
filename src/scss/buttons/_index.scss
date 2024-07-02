@@ -1,0 +1,18 @@
+@use "../abstracts/fonts" as f;
+@use "../abstracts/colours" as c;
+
+.btn {
+    border-radius: 25px;
+    font-family: f.$font-dm-serif;
+
+    &.btn-primary {
+        background-color: c.$brand-red;
+        border-color: c.$brand-red;
+        box-shadow: 0 4px 1px darken(c.$brand-red, 10%);
+
+        &:hover {
+            background-color: darken(c.$brand-red, 5%);
+            box-shadow: none;
+        }
+    }
+}

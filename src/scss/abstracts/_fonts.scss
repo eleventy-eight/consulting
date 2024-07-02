@@ -1,0 +1,27 @@
+// Define Google Fonts
+$font-dm-serif: "DM Serif Display", serif;
+$font-open-sans: "Open Sans", sans-serif;
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: $font-dm-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+p,
+a {
+    font-family: $font-open-sans;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+}
+
+p {
+    letter-spacing: -1px;
+}
