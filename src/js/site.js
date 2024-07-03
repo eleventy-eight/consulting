@@ -1,5 +1,7 @@
-// Import Bootstrap JS
-import "../../node_modules/bootstrap/dist/js/bootstrap.bundle";
+// Import libraries
+import "bootstrap/dist/js/bootstrap.bundle";
+import AOS from "aos";
+import axios from "axios";
 
 // Add haptic feedback on links
 const links = document.querySelectorAll("a[href]");
@@ -32,3 +34,22 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
 });
+
+// Animate on scroll initiate
+document.addEventListener("DOMContentLoaded", function () {
+    AOS.init({
+        once: true,
+    });
+});
+
+// Form submission
+axios
+    .post("https://submit-form.com/UmU2KIcQk", {
+        message: "Hello, World",
+    })
+    .then(function (response) {
+        console.log(response);
+    })
+    .catch(function (response) {
+        console.error(response);
+    });

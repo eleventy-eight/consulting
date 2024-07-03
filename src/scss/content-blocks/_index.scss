@@ -1,0 +1,54 @@
+@use "../abstracts/colours" as c;
+
+.box {
+    position: relative;
+
+    &:after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 60px; /* Adjust height for desired shadow size */
+        box-shadow: 0 8px 10px rgba(0, 0, 0, 0.1); /* Adjust shadow properties */
+        border-bottom: 1px solid c.$light-grey;
+    }
+
+    .padding {
+        padding-left: 5rem;
+    }
+
+    #what,
+    #why,
+    #who,
+    #how,
+    #talk {
+        padding: 6rem 0;
+
+        h2 {
+            font-size: 3.5rem;
+            margin-bottom: 2.5rem;
+        }
+
+        h3 {
+            font-size: 2.5rem;
+            margin-bottom: 2rem;
+        }
+
+        p {
+            margin-bottom: 2rem;
+            max-width: 600px;
+        }
+    }
+
+    // Customisations
+    #talk {
+        h2 {
+            margin-bottom: 0;
+        }
+
+        p {
+            max-width: none;
+        }
+    }
+}

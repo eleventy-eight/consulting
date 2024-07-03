@@ -1,7 +1,8 @@
 @use "../abstracts/colours" as c;
 
 .navbar {
-    background-color: transparent;
+    background-color: c.$white;
+    border-bottom: 1px solid c.$light-grey;
 
     .nav-link {
         letter-spacing: -1px;

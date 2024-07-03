@@ -3,7 +3,46 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Eleventy8 Internet Consultancy</title>
-
+        <meta
+            name="description"
+            content="Unlock the potential of your online presence with Eleventy8 Internet Consultancy"
+        />
+        <meta property="og:type" content="website" />
+        <meta property="og:locale" content="en-GB" />
+        <meta property="og:url" content="https://eleventy8.com" />
+        <meta property="og:site_name" content="Eleventy8" />
+        <meta property="og:title" content="Eleventy8 Internet Consultancy" />
+        <meta
+            property="og:description"
+            content="Unlock the potential of your online presence with Eleventy8 Internet Consultancy"
+        />
+        <meta property="og:image" content="dist/img/og-image.png" />
+        <meta property="og:image:width" content="1200" />
+        <link
+            rel="apple-touch-icon"
+            sizes="180x180"
+            href="dist/img/apple-touch-icon.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="dist/img/favicon-32x32.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="16x16"
+            href="dist/img/favicon-16x16.png"
+        />
+        <link rel="manifest" href="site.webmanifest" />
+        <link
+            rel="mask-icon"
+            href="dist/img/safari-pinned-tab.svg"
+            color="#f5061d"
+        />
+        <meta name="msapplication-TileColor" content="#ffffff" />
+        <meta name="theme-color" content="#ffffff" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link
@@ -13,55 +52,60 @@
         <link rel="stylesheet" href="dist/css/styles.css" />
     </head>
     <body>
-        <nav class="navbar navbar-expand-lg px-lg-5 py-lg-3">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="/">
-                    <img
-                        loading="lazy"
-                        src="dist/img/e8-horizontal-black.svg"
-                        alt="Eleventy8 | Paul George, Web Consultant"
-                        width="200"
-                    />
-                </a>
-                <button
-                    class="navbar-toggler"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent"
-                    aria-controls="navbarSupportedContent"
-                    aria-expanded="false"
-                    aria-label="Toggle navigation"
-                >
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div
-                    class="collapse navbar-collapse"
-                    id="navbarSupportedContent"
-                >
-                    <ul class="navbar-nav ms-auto">
-                        <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="#what"
-                                >What?</a
-                            >
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#why">Why?</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#who">Who?</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#how">How?</a>
-                        </li>
-                        <li>
-                            <a href="#talk" class="btn btn-primary"
-                                >Let's Talk</a
-                            >
-                        </li>
-                    </ul>
+        <header>
+            <nav class="navbar navbar-expand-lg px-lg-5 py-lg-3 sticky-top">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="/">
+                        <img
+                            loading="lazy"
+                            src="dist/img/e8-horizontal-black.svg"
+                            alt="Eleventy8 | Paul George, Internet Consultant"
+                            width="200"
+                        />
+                    </a>
+                    <button
+                        class="navbar-toggler"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent"
+                        aria-controls="navbarSupportedContent"
+                        aria-expanded="false"
+                        aria-label="Toggle navigation"
+                    >
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div
+                        class="collapse navbar-collapse"
+                        id="navbarSupportedContent"
+                    >
+                        <ul class="navbar-nav ms-auto">
+                            <li class="nav-item">
+                                <a
+                                    class="nav-link"
+                                    aria-current="page"
+                                    href="#what"
+                                    >What?</a
+                                >
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#why">Why?</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#who">Who?</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#how">How?</a>
+                            </li>
+                            <li>
+                                <a href="#talk" class="btn btn-primary"
+                                    >Contact</a
+                                >
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-            </div>
-        </nav>
+            </nav>
+        </header>
 
         <section
             id="hero"
@@ -82,68 +126,237 @@
             </div>
         </section>
 
-        <section id="what" class="container">
-            <div class="row px-lg-5 py-lg-5">
-                <div class="col">
-                    <h2 class="text-center">What I Offer</h2>
+        <div
+            class="box"
+            data-aos="fade-up"
+            data-aos-anchor-placement="top-center"
+        >
+            <section id="what" class="container">
+                <div class="row">
+                    <div class="col">
+                        <h2 class="text-center">What I Offer</h2>
+                    </div>
                 </div>
-            </div>
-            <div class="row">
-                <div class="col"></div>
-                <div class="col"></div>
-            </div>
-        </section>
+                <div class="row d-flex align-items-center">
+                    <div class="col-lg-5">
+                        <img
+                            loading="lazy"
+                            class="img-fluid rounded"
+                            src="https://placehold.co/600x400"
+                            alt=""
+                        />
+                    </div>
+                    <div class="col-lg-7 padding">
+                        <h3>A Title</h3>
+                        <p>
+                            In finibus lectus ut turpis auctor faucibus. Cras
+                            nec risus vitae nulla condimentum rutrum. Morbi
+                            viverra, arcu mattis placerat fermentum, nisi nisi
+                            maximus mauris, ac tincidunt quam ex iaculis augue.
+                            Etiam sit amet fringilla quam. Duis iaculis ipsum
+                            dignissim, pretium lectus quis, suscipit mauris.
+                            Nullam id mi eu lacus ultrices sollicitudin in sit
+                            amet eros. Pellentesque sagittis mi arcu, vitae
+                            elementum mi blandit vel. Morbi non velit vel est
+                            porttitor elementum.
+                        </p>
+                        <a href="#talk" class="btn btn-primary">Interested?</a>
+                    </div>
+                </div>
+            </section>
+        </div>
 
-        <section id="why" class="container">
-            <div class="row px-lg-5 py-lg-5">
-                <div class="col">
-                    <h2 class="text-center">Why Hire Me?</h2>
+        <div
+            class="box"
+            data-aos="fade-up"
+            data-aos-anchor-placement="top-center"
+        >
+            <section id="why" class="container">
+                <div class="row px-lg-5 py-lg-5">
+                    <div class="col">
+                        <h2 class="text-center">Why Hire Me?</h2>
+                    </div>
                 </div>
-            </div>
-            <div class="row">
-                <div class="col"></div>
-                <div class="col"></div>
-            </div>
-        </section>
+                <div class="row d-flex align-items-center">
+                    <div class="col-lg-7">
+                        <h3>A Title</h3>
+                        <p>
+                            In finibus lectus ut turpis auctor faucibus. Cras
+                            nec risus vitae nulla condimentum rutrum. Morbi
+                            viverra, arcu mattis placerat fermentum, nisi nisi
+                            maximus mauris, ac tincidunt quam ex iaculis augue.
+                            Etiam sit amet fringilla quam. Duis iaculis ipsum
+                            dignissim, pretium lectus quis, suscipit mauris.
+                            Nullam id mi eu lacus ultrices sollicitudin in sit
+                            amet eros. Pellentesque sagittis mi arcu, vitae
+                            elementum mi blandit vel. Morbi non velit vel est
+                            porttitor elementum.
+                        </p>
+                        <a href="#talk" class="btn btn-primary">Interested?</a>
+                    </div>
+                    <div class="col-lg-5">
+                        <img
+                            loading="lazy"
+                            class="img-fluid rounded"
+                            src="https://placehold.co/600x400"
+                            alt=""
+                        />
+                    </div>
+                </div>
+            </section>
+        </div>
 
-        <section id="who" class="container">
-            <div class="row px-lg-5 py-lg-5">
-                <div class="col">
-                    <h2 class="text-center">Who am I?</h2>
+        <div
+            class="box"
+            data-aos="fade-up"
+            data-aos-anchor-placement="top-center"
+        >
+            <section id="who" class="container">
+                <div class="row px-lg-5 py-lg-5">
+                    <div class="col">
+                        <h2 class="text-center">Who am I?</h2>
+                    </div>
                 </div>
-            </div>
-            <div class="row">
-                <div class="col"></div>
-                <div class="col"></div>
-            </div>
-        </section>
+                <div class="row d-flex align-items-center">
+                    <div class="col-lg-5">
+                        <img
+                            loading="lazy"
+                            class="img-fluid rounded"
+                            src="https://placehold.co/600x400"
+                            alt=""
+                        />
+                    </div>
+                    <div class="col-lg-7 padding">
+                        <h3>Paul George</h3>
+                        <p>
+                            In finibus lectus ut turpis auctor faucibus. Cras
+                            nec risus vitae nulla condimentum rutrum. Morbi
+                            viverra, arcu mattis placerat fermentum, nisi nisi
+                            maximus mauris, ac tincidunt quam ex iaculis augue.
+                            Etiam sit amet fringilla quam. Duis iaculis ipsum
+                            dignissim, pretium lectus quis, suscipit mauris.
+                            Nullam id mi eu lacus ultrices sollicitudin in sit
+                            amet eros. Pellentesque sagittis mi arcu, vitae
+                            elementum mi blandit vel. Morbi non velit vel est
+                            porttitor elementum.
+                        </p>
+                        <a href="#talk" class="btn btn-primary">Interested?</a>
+                    </div>
+                </div>
+            </section>
+        </div>
 
-        <section id="how" class="container">
-            <div class="row px-lg-5 py-lg-5">
-                <div class="col">
-                    <h2 class="text-center">
-                        How I Operate and How I can Help
-                    </h2>
+        <div
+            class="box"
+            data-aos="fade-up"
+            data-aos-anchor-placement="top-center"
+        >
+            <section id="how" class="container">
+                <div class="row px-lg-5 py-lg-5">
+                    <div class="col">
+                        <h2 class="text-center">How I Operate</h2>
+                    </div>
                 </div>
-            </div>
-            <div class="row">
-                <div class="col"></div>
-                <div class="col"></div>
-            </div>
-        </section>
+                <div class="row d-flex align-items-center">
+                    <div class="col-lg-7">
+                        <h3>A Title</h3>
+                        <p>
+                            In finibus lectus ut turpis auctor faucibus. Cras
+                            nec risus vitae nulla condimentum rutrum. Morbi
+                            viverra, arcu mattis placerat fermentum, nisi nisi
+                            maximus mauris, ac tincidunt quam ex iaculis augue.
+                            Etiam sit amet fringilla quam. Duis iaculis ipsum
+                            dignissim, pretium lectus quis, suscipit mauris.
+                            Nullam id mi eu lacus ultrices sollicitudin in sit
+                            amet eros. Pellentesque sagittis mi arcu, vitae
+                            elementum mi blandit vel. Morbi non velit vel est
+                            porttitor elementum.
+                        </p>
+                        <a href="#talk" class="btn btn-primary">Interested?</a>
+                    </div>
+                    <div class="col-lg-5">
+                        <img
+                            loading="lazy"
+                            class="img-fluid rounded"
+                            src="https://placehold.co/600x400"
+                            alt=""
+                        />
+                    </div>
+                </div>
+            </section>
+        </div>
 
-        <section id="talk" class="container">
-            <div class="row px-lg-5 py-lg-5">
-                <div class="col">
-                    <h2 class="text-center">Let's Talk</h2>
+        <div
+            class="box"
+            data-aos="fade-up"
+            data-aos-anchor-placement="top-center"
+        >
+            <section id="talk" class="container">
+                <div class="row px-lg-5 py-lg-5">
+                    <div class="col text-center">
+                        <h2>Let's Talk</h2>
+                        <p>
+                            There's no obligation to sign up to anything and no
+                            sales tactics are used.
+                        </p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <form
+                            action="https://submit-form.com/UmU2KIcQk"
+                            method="post"
+                        >
+                            <label for="name">Name</label>
+                            <input
+                                type="text"
+                                id="name"
+                                name="name"
+                                placeholder="Name"
+                                required=""
+                            />
+                            <label for="email">Email</label>
+                            <input
+                                type="email"
+                                id="email"
+                                name="email"
+                                placeholder="Email"
+                                required=""
+                            />
+                            <label for="message">Message</label>
+                            <textarea
+                                id="message"
+                                name="message"
+                                placeholder="Message"
+                                required=""
+                            ></textarea>
+                            <button type="submit">Send</button>
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <img
+                            loading="lazy"
+                            class="ing-fluid"
+                            src="dist/img/e8-horizontal-black.svg"
+                            width="100"
+                            alt="Eleventy8 | Paul George, Internet Consultant"
+                        />
+                    </div>
                 </div>
             </div>
-            <div class="row">
-                <div class="col"></div>
-                <div class="col"></div>
-            </div>
-        </section>
+        </footer>
 
         <script src="dist/js/site.js"></script>
+        <script>
+            // Animate on scroll initiate
+            AOS.init();
+        </script>
     </body>
 </html>

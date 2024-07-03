@@ -1,0 +1,6 @@
+@use "../abstracts/colours" as c;
+
+footer {
+    background-color: c.$light-grey;
+    padding: 6rem 0;
+}

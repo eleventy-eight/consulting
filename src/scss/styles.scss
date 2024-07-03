@@ -1,7 +1,10 @@
-// Import Bootstrap CSS
+// Import libraries
 @use "../../node_modules/bootstrap/scss/bootstrap";
+@use "../../node_modules/aos/dist/aos";
 
 @use "abstracts/fonts";
 @use "buttons";
 @use "navbar";
 @use "hero";
+@use "content-blocks";
+@use "footer";

@@ -2,9 +2,9 @@
 
 #hero {
     position: relative;
-    background-image: url(../../../dist/img/e8-hero-bg.png);
+    background-image: url(../../../dist/img/e8-full-hero-bg.png);
     background-size: contain;
-    background-position: right top;
+    background-position: 465px top;
     background-repeat: no-repeat;
     height: 90vh;
 
@@ -17,6 +17,7 @@
     p {
         font-size: 1.5rem;
         max-width: 510px;
+        margin-bottom: 3.5rem;
 
         span {
             border-bottom: 2px solid c.$brand-gold;
