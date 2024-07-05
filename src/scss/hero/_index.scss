@@ -2,9 +2,11 @@
 
 #hero {
     position: relative;
-    background-image: url(../../../dist/img/e8-full-hero-bg.png);
+    background: url("../../../dist/img/e8-full-hero-bg.png") no-repeat
+            calc(100% + 135px) top,
+        url("../../../dist/img/e8-circle.png") no-repeat calc(100% + 65px) 20px,
+        linear-gradient(to bottom, transparent, #eeeeee);
     background-size: contain;
-    background-position: 465px top;
     background-repeat: no-repeat;
     height: 90vh;
 
@@ -43,7 +45,27 @@
     }
 
     @media (max-width: 576.98px) {
-        background-position: 30px top;
-        height: 265px;
+        background: url("../../../dist/img/e8-full-hero-bg.png") no-repeat
+                calc(100% + 90px) top,
+            url("../../../dist/img/e8-circle.png") no-repeat calc(100% + 60px)
+                5px;
+        background-size: contain;
+        height: 244px;
+
+        h1 {
+            font-size: 2rem;
+            max-width: 250px;
+            margin-bottom: 1.4rem;
+        }
+
+        p {
+            display: none;
+        }
+
+        .btn {
+            font-size: 1rem;
+            padding: 0.5rem 1rem;
+            border-radius: 40px;
+        }
     }
 }

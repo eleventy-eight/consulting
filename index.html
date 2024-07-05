@@ -60,7 +60,6 @@
                             loading="lazy"
                             src="dist/img/e8-horizontal-black.svg"
                             alt="Eleventy8 | Paul George, Internet Consultant"
-                            width="200"
                         />
                     </a>
                     <button
@@ -119,7 +118,10 @@
                         <span>20 years of experience</span> in getting
                         businesses online and making them money
                     </p>
-                    <a href="#talk" class="btn btn-primary btn-lg"
+                    <a
+                        href="#talk"
+                        data-aos="flip-right"
+                        class="btn btn-primary btn-lg"
                         >Let's Talk</a
                     >
                 </div>
@@ -137,92 +139,153 @@
                         <h2>What I Offer</h2>
                         <p>
                             Whether you're a small startup or a medium
-                            enterprise, I have the expertise to help you succeed
-                            online.
+                            enterprise, I have the expertise and contacts to
+                            help you succeed online.
                         </p>
                     </div>
                 </div>
-
-                <div class="row g-5">
-                    <div class="col">
+                <div class="row">
+                    <div class="col-md-6 col-lg-4 mb-4">
                         <div class="box p-5 text-center">
-                            <img
-                                loading="lazy"
-                                class="img-fluid rounded-circle"
-                                src="https://placehold.co/100x100"
-                                alt="Website Creation & Revamp"
-                                width="100"
-                                height="100"
-                            />
-                            <h3>Website Creation & Revamp</h3>
+                            <div class="box-img">
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    fill="none"
+                                    viewBox="0 0 24 24"
+                                    stroke-width="1.5"
+                                    stroke="currentColor"
+                                    width="80"
+                                    height="80"
+                                >
+                                    <path
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        d="M12 21a9.004 9.004 0 0 0 8.716-6.747M12 21a9.004 9.004 0 0 1-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 0 1 7.843 4.582M12 3a8.997 8.997 0 0 0-7.843 4.582m15.686 0A11.953 11.953 0 0 1 12 10.5c-2.998 0-5.74-1.1-7.843-2.918m15.686 0A8.959 8.959 0 0 1 21 12c0 .778-.099 1.533-.284 2.253m0 0A17.919 17.919 0 0 1 12 16.5c-3.162 0-6.133-.815-8.716-2.247m0 0A9.015 9.015 0 0 1 3 12c0-1.605.42-3.113 1.157-4.418"
+                                    />
+                                </svg>
+                            </div>
+                            <h3>Websites</h3>
                         </div>
                     </div>
-                    <div class="col">
+                    <div class="col-md-6 col-lg-4 mb-4">
                         <div class="box p-5 text-center">
-                            <img
-                                loading="lazy"
-                                class="img-fluid rounded-circle"
-                                src="https://placehold.co/100x100"
-                                alt="E-commerce Integration"
-                                width="100"
-                                height="100"
-                            />
-                            <h3>E-commerce Integration</h3>
+                            <div class="box-img">
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    fill="none"
+                                    viewBox="0 0 24 24"
+                                    stroke-width="1.5"
+                                    stroke="currentColor"
+                                    width="65"
+                                    height="65"
+                                >
+                                    <path
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        d="M11.42 15.17 17.25 21A2.652 2.652 0 0 0 21 17.25l-5.877-5.877M11.42 15.17l2.496-3.03c.317-.384.74-.626 1.208-.766M11.42 15.17l-4.655 5.653a2.548 2.548 0 1 1-3.586-3.586l6.837-5.63m5.108-.233c.55-.164 1.163-.188 1.743-.14a4.5 4.5 0 0 0 4.486-6.336l-3.276 3.277a3.004 3.004 0 0 1-2.25-2.25l3.276-3.276a4.5 4.5 0 0 0-6.336 4.486c.091 1.076-.071 2.264-.904 2.95l-.102.085m-1.745 1.437L5.909 7.5H4.5L2.25 3.75l1.5-1.5L7.5 4.5v1.409l4.26 4.26m-1.745 1.437 1.745-1.437m6.615 8.206L15.75 15.75M4.867 19.125h.008v.008h-.008v-.008Z"
+                                    />
+                                </svg>
+                            </div>
+                            <h3>Maintenance</h3>
                         </div>
                     </div>
-                    <div class="col">
+                    <div class="col-md-6 col-lg-4 mb-4">
                         <div class="box p-5 text-center">
-                            <img
-                                loading="lazy"
-                                class="img-fluid rounded-circle"
-                                src="https://placehold.co/100x100"
-                                alt=""
-                                width="100"
-                                height="100"
-                            />
-                            <h3>Security & Maintenance</h3>
+                            <div class="box-img">
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    fill="none"
+                                    viewBox="0 0 24 24"
+                                    stroke-width="1.5"
+                                    stroke="currentColor"
+                                    width="65"
+                                    height="65"
+                                >
+                                    <path
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z"
+                                    />
+                                </svg>
+                            </div>
+                            <h3>Ecommerce</h3>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 mb-4 mb-md-0">
+                        <div class="box p-5 text-center">
+                            <div class="box-img">
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    fill="none"
+                                    viewBox="0 0 24 24"
+                                    stroke-width="1.5"
+                                    stroke="currentColor"
+                                    width="75"
+                                    height="75"
+                                >
+                                    <path
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        d="M9 12.75 11.25 15 15 9.75m-3-7.036A11.959 11.959 0 0 1 3.598 6 11.99 11.99 0 0 0 3 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285Z"
+                                    />
+                                </svg>
+                            </div>
+                            <h3>Security</h3>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 mb-4 mb-md-0">
+                        <div class="box p-5 text-center">
+                            <div class="box-img">
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    stroke-width="1.5"
+                                    viewBox="0 0 24 24"
+                                    width="60"
+                                    height="60"
+                                >
+                                    <path
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        d="M9.53 16.122a3 3 0 0 0-5.78 1.128 2.25 2.25 0 0 1-2.4 2.245 4.5 4.5 0 0 0 8.4-2.245c0-.399-.078-.78-.22-1.128zm0 0a15.998 15.998 0 0 0 3.388-1.62m-5.043-.025a15.994 15.994 0 0 1 1.622-3.395m3.42 3.42a15.995 15.995 0 0 0 4.764-4.648l3.876-5.814a1.151 1.151 0 0 0-1.597-1.597L14.146 6.32a15.996 15.996 0 0 0-4.649 4.763m3.42 3.42a6.776 6.776 0 0 0-3.42-3.42"
+                                    />
+                                </svg>
+                            </div>
+                            <h3>Branding</h3>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="box p-5 text-center">
+                            <div class="box-img">
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    stroke-width="1.5"
+                                    viewBox="0 0 24 24"
+                                    width="65"
+                                    height="65"
+                                >
+                                    <path
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        d="M2.25 18.75a60.07 60.07 0 0 1 15.797 2.101c.727.198 1.453-.342 1.453-1.096V18.75M3.75 4.5v.75A.75.75 0 0 1 3 6h-.75m0 0v-.375c0-.621.504-1.125 1.125-1.125H20.25M2.25 6v9m18-10.5v.75c0 .414.336.75.75.75h.75m-1.5-1.5h.375c.621 0 1.125.504 1.125 1.125v9.75c0 .621-.504 1.125-1.125 1.125h-.375m1.5-1.5H21a.75.75 0 0 0-.75.75v.75m0 0H3.75m0 0h-.375a1.125 1.125 0 0 1-1.125-1.125V15m1.5 1.5v-.75A.75.75 0 0 0 3 15h-.75M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0zm3 0h.008v.008H18V10.5zm-12 0h.008v.008H6V10.5z"
+                                    />
+                                </svg>
+                            </div>
+                            <h3>Cost Savings</h3>
                         </div>
                     </div>
                 </div>
-                <div class="row g-5 mt-1">
-                    <div class="col">
-                        <div class="box p-5 text-center">
-                            <img
-                                loading="lazy"
-                                class="img-fluid rounded-circle"
-                                src="https://placehold.co/100x100"
-                                alt=""
-                                width="100"
-                                height="100"
-                            />
-                            <h3>Security & Maintenance</h3>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="box p-5 text-center">
-                            <img
-                                loading="lazy"
-                                class="img-fluid rounded-circle"
-                                src="https://placehold.co/100x100"
-                                alt=""
-                                width="100"
-                                height="100"
-                            />
-                            <h3>Security & Maintenance</h3>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="box p-5 text-center">
-                            <img
-                                loading="lazy"
-                                class="img-fluid rounded-circle"
-                                src="https://placehold.co/100x100"
-                                alt=""
-                                width="100"
-                                height="100"
-                            />
-                            <h3>Security & Maintenance</h3>
-                        </div>
+                <div class="row mt-5">
+                    <div class="col text-center">
+                        <a
+                            href="#talk"
+                            data-aos="flip-right"
+                            class="btn btn-primary"
+                            >Get Started</a
+                        >
                     </div>
                 </div>
             </section>
@@ -254,14 +317,19 @@
                             elementum mi blandit vel. Morbi non velit vel est
                             porttitor elementum.
                         </p>
-                        <a href="#talk" class="btn btn-primary">Interested?</a>
+                        <a
+                            href="#talk"
+                            data-aos="flip-right"
+                            class="btn btn-primary"
+                            >Get in Touch</a
+                        >
                     </div>
                     <div class="col-lg-5">
                         <img
                             loading="lazy"
                             class="img-fluid rounded"
-                            src="https://placehold.co/600x400"
-                            alt=""
+                            src="dist/img/macbook-display-code.jpg"
+                            alt="Expertise without the Geek Speak"
                         />
                     </div>
                 </div>
@@ -279,13 +347,13 @@
                         <h2 class="text-center">Who am I?</h2>
                     </div>
                 </div>
-                <div class="row d-flex align-items-center">
+                <div class="row">
                     <div class="col-lg-5">
                         <img
                             loading="lazy"
                             class="img-fluid rounded"
-                            src="https://placehold.co/600x400"
-                            alt=""
+                            src="dist/img/paul-drinking-larger.jpg"
+                            alt="Who am I?"
                         />
                     </div>
                     <div class="col-lg-7 padding">
@@ -294,8 +362,7 @@
                             With 20 years of experience in getting businesses
                             online and making them money, I bring a keen eye for
                             detail and advanced technical knowledge. And no, I'm
-                            not the anti-social techie stereotype, but I do
-                            sometimes dress like I work in a bowling alley.
+                            not the anti-social techie stereotype.
                         </p>
                         <p>
                             I feel that using excessive technical jargon is a
@@ -308,16 +375,21 @@
                             I'm also totally self taught in web design and
                             development, I've made some mistakes in my career
                             and learnt from them. I'm a safe pair of hands
-                            because I've done a lot of trial and error in my
-                            career and know what works and what doesn't. You
-                            could benefit from my experiences.
+                            because I've done a lot of trial and error over the
+                            years and know what works. You could benefit from my
+                            experiences.
                         </p>
                         <p>
                             I love problem-solving, and I'm good at it. Set me a
                             challenge, and I'll find a way to solve it, or think
                             my way around it.
                         </p>
-                        <a href="#talk" class="btn btn-primary"></a>
+                        <a
+                            href="#talk"
+                            data-aos="flip-right"
+                            class="btn btn-primary"
+                            >Book a Free Consultation</a
+                        >
                     </div>
                 </div>
             </section>
@@ -334,9 +406,9 @@
                         <h2 class="text-center">How I Operate</h2>
                     </div>
                 </div>
-                <div class="row d-flex align-items-center">
+                <div class="row">
                     <div class="col-lg-7">
-                        <h3>A Title</h3>
+                        <h3>Ask the Right Questions, and Listen</h3>
                         <p>
                             Asking the right questions and getting to understand
                             more about your business is how I get results.
@@ -356,7 +428,12 @@
                             A flowing conversation is the best way I can help to
                             help you and your business.
                         </p>
-                        <a href="#talk" class="btn btn-primary">Interested?</a>
+                        <a
+                            href="#talk"
+                            data-aos="flip-right"
+                            class="btn btn-primary"
+                            >Start Your Project</a
+                        >
                     </div>
                     <div class="col-lg-5">
                         <img
@@ -436,6 +513,10 @@
                 </div>
             </div>
         </footer>
+
+        <button onclick="topFunction()" id="backToTopBtn" title="Go to top">
+            Top
+        </button>
 
         <script src="dist/js/site.js"></script>
     </body>

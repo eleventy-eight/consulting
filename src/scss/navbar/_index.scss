@@ -4,11 +4,25 @@
     background-color: c.$white;
     border-bottom: 1px solid c.$light-grey;
 
+    .navbar-brand {
+        img {
+            width: 200px;
+        }
+    }
+
     .nav-link {
         letter-spacing: -1px;
         font-weight: 500;
         border-bottom: 2px solid c.$brand-gold;
         text-transform: uppercase;
         margin-right: 1rem;
+    }
+
+    @media (max-width: 576.98px) {
+        .navbar-brand {
+            img {
+                width: 120px;
+            }
+        }
     }
 }

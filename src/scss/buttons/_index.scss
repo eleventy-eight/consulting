@@ -1,6 +1,8 @@
 @use "../abstracts/fonts" as f;
 @use "../abstracts/colours" as c;
 
+@use "back-to-top";
+
 .btn {
     border-radius: 25px;
     font-family: f.$font-dm-serif;
@@ -9,6 +11,7 @@
         background-color: c.$brand-red;
         border-color: c.$brand-red;
         box-shadow: 0 4px 1px darken(c.$brand-red, 10%);
+        margin-bottom: 4px;
 
         &:hover {
             background-color: darken(c.$brand-red, 5%);

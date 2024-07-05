@@ -1,6 +1,9 @@
 @use "../abstracts/colours" as c;
+@use "../abstracts/fonts" as f;
 
 .box {
+    background: linear-gradient(to bottom, transparent, #eeeeee);
+    background-repeat: no-repeat;
     position: relative;
 
     &:after {
@@ -18,20 +21,30 @@
         padding-left: 5rem;
     }
 
+    .btn {
+        font-size: 1.5rem;
+        padding: 1rem 2rem;
+        border-radius: 40px;
+    }
+
     #what,
     #why,
     #who,
     #how,
     #talk {
-        padding: 6rem 0;
+        padding-top: 6rem;
+        padding-bottom: 6rem;
 
         h2 {
+            position: relative;
             font-size: 3.5rem;
             margin-bottom: 2.5rem;
         }
 
         h3 {
+            font-family: f.$font-open-sans;
             font-size: 2.5rem;
+            color: darken(c.$light-grey, 40%);
             margin-bottom: 2rem;
         }
 
@@ -69,12 +82,28 @@
         }
 
         .box {
-            border: 1px solid c.$light-grey;
+            background: white;
+            border: 1px solid darken(c.$light-grey, 5%);
             border-radius: 5px;
-            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); /* Adjust shadow properties */
 
-            img {
-                margin-bottom: 1.5rem;
+            h3 {
+                font-weight: 600;
+            }
+
+            &:after {
+                box-shadow: none;
+            }
+
+            .box-img {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 100px;
+                height: 100px;
+                border: 1px solid darken(c.$light-grey, 5%);
+                border-radius: 50%;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+                margin: 0 auto 1.5rem auto;
             }
 
             h3 {
