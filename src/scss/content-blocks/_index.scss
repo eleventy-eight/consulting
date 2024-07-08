@@ -25,10 +25,29 @@
         }
     }
 
+    a {
+        color: c.$brand-red;
+        transition: all 0.5s;
+        text-decoration: none;
+
+        &:hover,
+        &:focus,
+        &:active {
+            color: c.$brand-dark-gold;
+        }
+    }
+
     .btn {
         font-size: 1.5rem;
         padding: 1rem 2rem;
         border-radius: 40px;
+        color: white;
+
+        &:hover,
+        &:focus,
+        &:active {
+            color: white;
+        }
 
         @media (max-width: 576.98px) {
             display: block;
@@ -40,6 +59,7 @@
     #why,
     #who,
     #how,
+    #projects,
     #talk {
         padding-top: 6rem;
         padding-bottom: 6rem;
@@ -87,12 +107,18 @@
 
     // Customisations
     #talk {
+        padding-bottom: 0;
+
         h2 {
             margin-bottom: 0;
         }
 
         p {
             max-width: none;
+        }
+
+        @media (max-width: 576.98px) {
+            padding-bottom: 3rem;
         }
     }
 
@@ -114,6 +140,7 @@
             background: white;
             border: 1px solid darken(c.$light-grey, 5%);
             border-radius: 5px;
+            padding: 5rem;
 
             h3 {
                 font-weight: 600;
@@ -139,6 +166,29 @@
                 font-size: 1.3rem;
                 margin-bottom: 0;
             }
+
+            @media (max-width: 576.98px) {
+                padding: 1rem;
+
+                h3 {
+                    font-size: 1.1rem;
+                }
+            }
+        }
+    }
+
+    #projects {
+        h2 {
+            margin-bottom: 1rem;
+        }
+
+        p {
+            &:last-of-type {
+                margin-bottom: 5rem;
+            }
+
+            max-width: 400px;
+            margin: 0 auto;
         }
     }
 }

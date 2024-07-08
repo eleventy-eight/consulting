@@ -1,6 +1,7 @@
 // Import libraries
 import "bootstrap/dist/js/bootstrap.bundle";
 import AOS from "aos";
+import Swiper from "swiper";
 
 // Add haptic feedback on links
 const links = document.querySelectorAll("a[href]");
@@ -67,4 +68,24 @@ document.addEventListener("DOMContentLoaded", function () {
         document.body.scrollTop = 0; // For Safari
         document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
     };
+});
+
+// Initiate Swiper JS
+document.addEventListener("DOMContentLoaded", function () {
+    var swiper = new Swiper(".mySwiper", {
+        effect: "coverflow",
+        grabCursor: true,
+        centeredSlides: true,
+        slidesPerView: "auto",
+        coverflowEffect: {
+            rotate: 50,
+            stretch: 0,
+            depth: 100,
+            modifier: 1,
+            slideShadows: true,
+        },
+        pagination: {
+            el: ".swiper-pagination",
+        },
+    });
 });
