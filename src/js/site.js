@@ -1,7 +1,6 @@
 // Import libraries
 import "bootstrap/dist/js/bootstrap.bundle";
 import AOS from "aos";
-import axios from "axios";
 
 // Add haptic feedback on links
 const links = document.querySelectorAll("a[href]");
@@ -42,39 +41,30 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 
-// Form submission
-axios
-    .post("https://submit-form.com/UmU2KIcQk", {
-        message: "Hello, World",
-    })
-    .then(function (response) {
-        console.log(response);
-    })
-    .catch(function (response) {
-        console.error(response);
-    });
-
 // Back to top button
-let backToTopBtn = document.getElementById("backToTopBtn");
+document.addEventListener("DOMContentLoaded", function () {
+    // Back to top button
+    let backToTopBtn = document.getElementById("backToTopBtn");
 
-// When the user scrolls down 100px from the top of the document, show the button
-window.onscroll = function () {
-    scrollFunction();
-};
+    // When the user scrolls down 200px from the top of the document, show the button
+    window.onscroll = function () {
+        scrollFunction();
+    };
 
-function scrollFunction() {
-    if (
-        document.body.scrollTop > 100 ||
-        document.documentElement.scrollTop > 100
-    ) {
-        backToTopBtn.style.display = "block";
-    } else {
-        backToTopBtn.style.display = "none";
+    function scrollFunction() {
+        if (
+            document.body.scrollTop > 200 ||
+            document.documentElement.scrollTop > 200
+        ) {
+            backToTopBtn.classList.add("show");
+        } else {
+            backToTopBtn.classList.remove("show");
+        }
     }
-}
 
-// When the user clicks on the button, scroll to the top of the document
-function topFunction() {
-    document.body.scrollTop = 0; // For Safari
-    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
-}
+    // When the user clicks on the button, scroll to the top of the document
+    window.topFunction = function topFunction() {
+        document.body.scrollTop = 0; // For Safari
+        document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+    };
+});
