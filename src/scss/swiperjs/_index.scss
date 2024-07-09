@@ -1,0 +1,50 @@
+@use "../abstracts/colours" as c;
+
+.swiper {
+    .swiper-wrapper {
+        .swiper-slide {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: auto;
+
+            .btn {
+                position: absolute;
+                top: 10px;
+                right: 0;
+                z-index: 99;
+
+                @media (max-width: 576.98px) {
+                    top: unset;
+                    right: 1px;
+                    bottom: 5px;
+                    font-size: 1rem;
+                    padding: 0.5rem 1rem;
+                }
+            }
+
+            img {
+                border: 1px solid darken(c.$light-grey, 10%);
+                border-radius: 30px;
+            }
+        }
+    }
+
+    .swiper-pagination {
+        .swiper-pagination-bullet {
+            border: 2px solid white;
+            width: 30px;
+            height: 30px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+
+            @media (max-width: 576.98px) {
+                width: 15px;
+                height: 15px;
+            }
+
+            &.swiper-pagination-bullet-active {
+                background-color: c.$brand-red;
+            }
+        }
+    }
+}
