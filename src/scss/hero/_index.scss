@@ -2,10 +2,8 @@
 
 #hero {
     position: relative;
-    background: url("consulting/dist/img/e8-full-hero-bg.png") no-repeat
-            calc(100% + 135px) top,
-        url("consulting/dist/img/e8-circle.png") no-repeat calc(100% + 65px)
-            20px,
+    background: url("e8-full-hero-bg.png") no-repeat calc(100% + 135px) top,
+        url("e8-circle.png") no-repeat calc(100% + 65px) 20px,
         linear-gradient(to bottom, transparent, #eeeeee);
     background-size: contain;
     background-repeat: no-repeat;
