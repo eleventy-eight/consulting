@@ -2,10 +2,9 @@
 
 #hero {
     position: relative;
-    background: url("/consulting/dist/img/e8-full-hero-bg.png") no-repeat
+    background: url("/dist/img/e8-full-hero-bg.png") no-repeat
             calc(100% + 135px) top,
-        url("/consulting/dist/img/e8-circle.png") no-repeat calc(100% + 65px)
-            20px,
+        url("/dist/img/e8-circle.png") no-repeat calc(100% + 65px) 20px,
         linear-gradient(to bottom, transparent, #eeeeee);
     background-size: contain;
     background-repeat: no-repeat;
@@ -45,10 +44,9 @@
     }
 
     @media (max-width: 576.98px) {
-        background: url("/consulting/dist/img/e8-full-hero-bg.png") no-repeat
+        background: url("/dist/img/e8-full-hero-bg.png") no-repeat
                 calc(100% + 120px) top,
-            url("/consulting/dist/img/e8-circle.png") no-repeat
-                calc(100% + 100px) 5px;
+            url("/dist/img/e8-circle.png") no-repeat calc(100% + 100px) 5px;
         background-size: contain;
         height: 244px;
 
