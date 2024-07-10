@@ -64,6 +64,7 @@
             rel="stylesheet"
         />
         <link rel="stylesheet" href="dist/css/styles.css" />
+        <script src="https://www.youtube.com/iframe_api"></script>
     </head>
     <body>
         <header class="sticky-top">
@@ -107,14 +108,16 @@
                                 <a class="nav-link" href="#who">Who?</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#how">How?</a>
-                            </li>
-                            <li class="nav-item">
                                 <a class="nav-link" href="#projects"
                                     >Projects</a
                                 >
                             </li>
-
+                            <li class="nav-item">
+                                <a class="nav-link" href="#how">How?</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#fun">Fun</a>
+                            </li>
                             <li>
                                 <a href="#talk" class="btn btn-primary"
                                     >Contact</a
@@ -126,6 +129,7 @@
             </nav>
         </header>
 
+        <!-- Hero -->
         <section
             id="hero"
             class="container-fluid d-flex justify-content-start align-items-center px-lg-5"
@@ -147,7 +151,9 @@
                 </div>
             </div>
         </section>
+        <!-- Hero -->
 
+        <!-- What -->
         <div
             class="box"
             data-aos="fade-up"
@@ -310,7 +316,9 @@
                 </div>
             </section>
         </div>
+        <!-- What -->
 
+        <!-- Why -->
         <div
             class="box"
             data-aos="fade-up"
@@ -369,7 +377,9 @@
                 </div>
             </section>
         </div>
+        <!-- Why -->
 
+        <!-- Who -->
         <div
             class="box"
             data-aos="fade-up"
@@ -464,7 +474,73 @@
                 </div>
             </section>
         </div>
+        <!-- Who -->
 
+        <!-- Successful Projects -->
+        <div
+            class="box"
+            data-aos="fade-up"
+            data-aos-anchor-placement="top-center"
+        >
+            <section id="projects" class="container">
+                <div class="row">
+                    <div class="col text-center">
+                        <h2>Successful Projects</h2>
+                        <p>
+                            Design or build, I'm incredibly versatile and can
+                            provide a wide range of services.
+                        </p>
+                    </div>
+                </div>
+                <div class="swiper projects">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <a
+                                href="https://jma-cleaning-solutions.com/"
+                                class="btn btn-primary"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                title="View JMA Cleaning Solutions"
+                                >View Project</a
+                            >
+                            <img
+                                loading="lazy"
+                                class="img-fluid"
+                                src="dist/img/JMA-Cleaning-Solutions.jpg"
+                                alt="JMA Cleaning Solutions, Liskeard, Cornwall"
+                            />
+                        </div>
+                        <div class="swiper-slide">
+                            <a
+                                href="https://nurtur.tech/"
+                                class="btn btn-primary"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                title="View nurtur.tech"
+                                >View Project</a
+                            >
+                            <img
+                                loading="lazy"
+                                class="img-fluid"
+                                src="dist/img/nurtur.tech.jpg"
+                                alt="nurtur.tech Corporate Website"
+                            />
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+                <div class="row mt-5">
+                    <div class="col text-center">
+                        <a href="#talk" class="btn btn-primary"
+                            >Start a Project</a
+                        >
+                    </div>
+                </div>
+            </section>
+        </div>
+        <!-- Successful Projects -->
+
+        <!-- Operate -->
         <div
             class="box"
             data-aos="fade-up"
@@ -516,62 +592,79 @@
                 </div>
             </section>
         </div>
+        <!-- Operate -->
 
+        <!-- Fun Stuff -->
         <div
             class="box"
             data-aos="fade-up"
             data-aos-anchor-placement="top-center"
         >
-            <section id="projects" class="container">
+            <section id="fun" class="container">
                 <div class="row">
                     <div class="col text-center">
-                        <h2>Successful Projects</h2>
+                        <h2>Fun Stuff</h2>
                         <p>
-                            Design or build, I'm incredibly versatile and can
-                            provide a wide range of services.
+                            Until February 2024, I managed my own podcast and
+                            movie review channel on YouTube. I plan to restart
+                            it again in the future.
                         </p>
                     </div>
                 </div>
-                <div class="swiper mySwiper">
+                <div class="swiper funStuff">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
-                            <a
-                                href="https://jma-cleaning-solutions.com/"
-                                class="btn btn-primary"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                title="View JMA Cleaning Solutions"
-                                >View Project</a
-                            >
-                            <img
-                                loading="lazy"
-                                class="img-fluid"
-                                src="dist/img/JMA-Cleaning-Solutions.jpg"
-                                alt="JMA Cleaning Solutions, Liskeard, Cornwall"
-                            />
+                            <div class="ratio ratio-16x9">
+                                <iframe
+                                    src="https://www.youtube-nocookie.com/embed/ndfcXNMV2H0?si=vijv2P5P9c42hFX9"
+                                    title="YouTube video player"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    referrerpolicy="strict-origin-when-cross-origin"
+                                    allowfullscreen
+                                ></iframe>
+                            </div>
                         </div>
                         <div class="swiper-slide">
-                            <a
-                                href="https://nurtur.tech/"
-                                class="btn btn-primary"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                title="View nurtur.tech"
-                                >View Project</a
-                            >
-                            <img
-                                loading="lazy"
-                                class="img-fluid"
-                                src="dist/img/nurtur.tech.jpg"
-                                alt="nurtur.tech Corporate Website"
-                            />
+                            <div class="ratio ratio-16x9">
+                                <iframe
+                                    src="https://www.youtube-nocookie.com/embed/GsYD4RUVFeQ?si=K6TCuQmmSDXX09rJ"
+                                    title="YouTube video player"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    referrerpolicy="strict-origin-when-cross-origin"
+                                    allowfullscreen
+                                ></iframe>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="ratio ratio-16x9">
+                                <iframe
+                                    src="https://www.youtube-nocookie.com/embed/W9Fr2Ig5_oI?si=roxAIvcPpXQI7aKR"
+                                    title="YouTube video player"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    referrerpolicy="strict-origin-when-cross-origin"
+                                    allowfullscreen
+                                ></iframe>
+                            </div>
                         </div>
                     </div>
                     <div class="swiper-pagination"></div>
                 </div>
+                <div class="row mt-5">
+                    <div class="col text-center">
+                        <a
+                            href="https://www.youtube.com/channel/UCMwhK00OKytB3cCPpHjPY9g"
+                            class="btn btn-primary"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            >Visit Channel</a
+                        >
+                    </div>
+                </div>
             </section>
         </div>
+        <!-- Fun Stuff -->
 
+        <!-- Let's Talk -->
         <div
             class="box"
             data-aos="fade-up"
@@ -599,11 +692,12 @@
                 </div>
             </section>
         </div>
+        <!-- Let's Talk -->
 
         <footer>
             <div class="container">
-                <div class="row">
-                    <div class="col">
+                <div class="row mb-3">
+                    <div class="col text-center">
                         <img
                             loading="lazy"
                             class="ing-fluid"
@@ -613,8 +707,136 @@
                         />
                     </div>
                 </div>
+                <div class="row">
+                    <div class="col text-center">
+                        <ul class="list-inline">
+                            <li class="list-inline-item">
+                                <a href="#what">What?</a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="#why">Why?</a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="#who">Who?</a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="#projects">Projects</a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="#how">How?</a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="#fun">Fun</a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="#talk">Contact</a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a
+                                    href="#"
+                                    data-bs-toggle="modal"
+                                    data-bs-target="#privacyPolicy"
+                                    >Privacy Policy</a
+                                >
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col text-center">&copy;2024 Eleventy8</div>
+                </div>
             </div>
         </footer>
+
+        <!-- Privacy Policy Modal -->
+        <div
+            class="modal fade"
+            id="privacyPolicy"
+            tabindex="-1"
+            aria-labelledby="privacyPolicyLabel"
+            aria-hidden="true"
+        >
+            <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title" id="privacyPolicyLabel">
+                            Privacy Policy
+                        </h4>
+                        <button
+                            type="button"
+                            class="btn-close"
+                            data-bs-dismiss="modal"
+                            aria-label="Close"
+                        ></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>
+                            The Eleventy8 website ('<a
+                                href="https://eleventy8.com"
+                                >https://eleventy8.com</a
+                            >') uses some tools that do collect a certain amount
+                            of information.
+                        </p>
+                        <p>
+                            This website uses Google Analytics, a web analytics
+                            service provided by Google, Inc. ("Google"). Google
+                            Analytics uses "cookies", which are text files
+                            placed on your computer to help the website analyse
+                            how visitors use the site. The information generated
+                            by the cookie about your use of the website
+                            (including your IP address) will be transmitted to
+                            and stored by Google on servers in the United
+                            States. Google will use this information for the
+                            purpose of evaluating your use of the website,
+                            compiling reports on website activity for website
+                            operators and providing other services relating to
+                            website activity and internet usage. Google may also
+                            transfer this information to third parties where
+                            required to do so by law, or where such third
+                            parties process the information on Google's behalf.
+                            Google will not associate your IP address with any
+                            other data held by Google. You may refuse the use of
+                            cookies by selecting the appropriate settings on
+                            your browser of the cookie selection functionality
+                            provided by CookieYes, however please note that if
+                            you do this you may not be able to use the full
+                            functionality of this website. By using this
+                            website, you consent to the processing of data about
+                            you by Google in the manner and for the purposes set
+                            out above. To opt out of Google Analytics please go
+                            to the following link:
+                            <a
+                                href="https://tools.google.com/dlpage/gaoptout"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                >https://tools.google.com/dlpage/gaoptout</a
+                            >
+                        </p>
+                        <p>
+                            Eleventy8 uses Google Workspace so the data you
+                            submit via the form on this website will be retained
+                            within a Google Sheet for a period no longer than a
+                            year. This enables us to make sure we don't miss
+                            your messages.
+                        </p>
+                        <p>
+                            We will retain any data you supply for as long as
+                            you and Eleventy8 have a services relationship,
+                            should you or Eleventy8 end the services
+                            relationship, Eleventy8 will delete your personal
+                            data.
+                        </p>
+                        <p>
+                            You can contact Eleventy8 at anytime and request all
+                            data we have related on you or ask for your data to
+                            be deleted and unsubscribed from any email
+                            subscriptions you may have signed up for.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Privacy Policy Modal -->
 
         <button onclick="topFunction()" id="backToTopBtn" title="Go to top">
             <svg

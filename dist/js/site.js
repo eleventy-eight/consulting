@@ -16728,7 +16728,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 // Initiate Swiper JS
 document.addEventListener("DOMContentLoaded", function () {
-    var swiper = new swiper_bundle__WEBPACK_IMPORTED_MODULE_2__["default"](".mySwiper", {
+    var swiper = new swiper_bundle__WEBPACK_IMPORTED_MODULE_2__["default"](".projects", {
         direction: "horizontal",
         loop: true,
         slidesPerView: "1",
@@ -16747,6 +16747,37 @@ document.addEventListener("DOMContentLoaded", function () {
             clickable: true,
         },
     });
+
+    var swiper = new swiper_bundle__WEBPACK_IMPORTED_MODULE_2__["default"](".funStuff", {
+        direction: "horizontal",
+        loop: true,
+        slidesPerView: "1",
+        centeredSlides: true,
+        spaceBetween: 0,
+        autoHeight: true,
+        keyboard: {
+            enabled: true,
+        },
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        },
+        on: {
+            slideChange: function () {
+                pauseAllVideos();
+            },
+        },
+    });
+
+    function pauseAllVideos() {
+        var iframes = document.querySelectorAll(".swiper-slide iframe");
+        iframes.forEach(function (iframe) {
+            iframe.contentWindow.postMessage(
+                '{"event":"command","func":"pauseVideo","args":""}',
+                "*"
+            );
+        });
+    }
 });
 
 }();

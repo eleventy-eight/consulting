@@ -1,0 +1,19 @@
+@use "../abstracts/colours" as c;
+
+.modal-dialog {
+    .modal-title {
+        color: c.$brand-red;
+    }
+
+    a {
+        color: c.$brand-red;
+        text-decoration: none;
+        transition: all 0.3s;
+
+        &:hover,
+        &:active,
+        &:focus {
+            color: c.$brand-dark-gold;
+        }
+    }
+}

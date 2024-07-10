@@ -23,7 +23,8 @@
                 }
             }
 
-            img {
+            img,
+            iframe {
                 border: 1px solid darken(c.$light-grey, 10%);
                 border-radius: 30px;
             }
